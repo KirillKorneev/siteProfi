@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/siteProfi/static/css/main.fcb30180.css",
+    "main.js": "/siteProfi/static/js/main.fcd23a6a.js",
+    "static/js/787.dd4029b4.chunk.js": "/siteProfi/static/js/787.dd4029b4.chunk.js",
+    "static/media/latest.png": "/siteProfi/static/media/latest.cdac03f7c154cbadb92d.png",
+    "static/media/title_im.png": "/siteProfi/static/media/title_im.f86a4f37c0b3bfc973a0.png",
+    "static/media/Montserrat-Bold.woff": "/siteProfi/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
+    "static/media/Montserrat-Regular.woff": "/siteProfi/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff",
+    "static/media/card_im.png": "/siteProfi/static/media/card_im.66b8697569700b415461.png",
+    "static/media/Moul.woff": "/siteProfi/static/media/Moul.d9858a61955f1d7f54b1.woff",
+    "static/media/TitilliumWeb-Light.woff": "/siteProfi/static/media/TitilliumWeb-Light.d0b0f0eaea779a03e807.woff",
+    "static/media/Metrophobic-Regular.woff": "/siteProfi/static/media/Metrophobic-Regular.82d70530932695a2e223.woff",
+    "static/media/Monda-Regular.woff": "/siteProfi/static/media/Monda-Regular.072e8a7db21568dddbba.woff",
+    "static/media/rec3.png": "/siteProfi/static/media/rec3.ae9d7b0e2f153d59aeeb.png",
+    "static/media/rec2.png": "/siteProfi/static/media/rec2.0253a9c64d34b18cfe03.png",
+    "static/media/rec1.png": "/siteProfi/static/media/rec1.b94acf8779e6d5a4789f.png",
+    "static/media/Inder-Regular.woff": "/siteProfi/static/media/Inder-Regular.1955dc8f7a84cd4aa65d.woff",
+    "static/media/rec4.png": "/siteProfi/static/media/rec4.7a9f7312a12d04dfff8e.png",
+    "static/media/logo.svg": "/siteProfi/static/media/logo.477b19c666fa04aa7e7b93f9d109b05c.svg",
+    "static/media/rocket.svg": "/siteProfi/static/media/rocket.4bf673934a49da6250c71eea5fe0e7b7.svg",
+    "static/media/security.svg": "/siteProfi/static/media/security.8db8367ee4a10b0e6bd0ca56c9033928.svg",
+    "static/media/copy.svg": "/siteProfi/static/media/copy.4b2d1923bc27633e3820766812baf11d.svg",
+    "static/media/square.svg": "/siteProfi/static/media/square.97c4aca66d6a517ab01ca32ba376447d.svg",
+    "static/media/man.svg": "/siteProfi/static/media/man.ff4635a43f2015f267c5fb0f70dc52c3.svg",
+    "index.html": "/siteProfi/index.html",
+    "static/media/logobut.svg": "/siteProfi/static/media/logobut.360f1c077fbec78226ed.svg",
+    "static/media/nom.svg": "/siteProfi/static/media/nom.c7d0ebd85bfd5cf3071eeccdb41b02eb.svg",
+    "main.fcb30180.css.map": "/siteProfi/static/css/main.fcb30180.css.map",
+    "main.fcd23a6a.js.map": "/siteProfi/static/js/main.fcd23a6a.js.map",
+    "787.dd4029b4.chunk.js.map": "/siteProfi/static/js/787.dd4029b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcb30180.css",
+    "static/js/main.fcd23a6a.js"
+  ]
+}
