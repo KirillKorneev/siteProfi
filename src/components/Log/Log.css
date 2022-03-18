@@ -1,0 +1,120 @@
+@font-face {
+    src: url('../../fonts/Moul/Moul.woff') format('woff');
+    font-family: 'Moul';
+}
+
+@font-face {
+    src: url('../../fonts/TitilliumWeb-Light.woff') format('woff');
+    font-family: 'Titillium Web';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+.log {
+    background-color: #E5E5E5;
+    padding-top: 87px;
+    min-height: calc(100vh - 61px - 77px - 2*47px + 7px);
+}
+
+.log__content {
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 47px;
+}
+
+.log__question {
+    margin: auto;
+    padding: 0;
+    width: 367px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-top: 45px;
+    font-family: 'Martel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 37px;
+    color: #000000;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.49);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.49);
+}
+
+.log__question_yellow {
+    font-family: 'Montserrat-Bold';
+    color: #F8D90F;
+}
+
+.log__question_grey {
+    font-family: 'Montserrat-Bold';
+    color: #4F5A70;;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Moul';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 61px;
+    color: #35B4C2;
+    width: 367px;
+}
+
+.form__input {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 367px;
+    height: 37px;
+    border: 1px solid #8F8F8F;
+    box-sizing: border-box;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #818181;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+}
+
+.form__input_el_email {
+    margin-top: 16px;
+}
+
+.form__input_el_pass {
+    margin-top: 20px;
+}
+
+.form__button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 367px;
+    height: 37px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #FFFFFF;  
+    background: #018BAF;
+    margin-top: 27px;
+}
+
+.from__button_red {
+    background-color: #F57616;
+}

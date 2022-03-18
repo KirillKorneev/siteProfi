@@ -1,0 +1,11 @@
+.containerL {
+    background-color: white;
+    padding-top: 42px;
+}
+
+.containerL__content {
+    width: 1272px;
+    margin: auto;
+    padding-bottom: 21px;
+    display: flex;
+}

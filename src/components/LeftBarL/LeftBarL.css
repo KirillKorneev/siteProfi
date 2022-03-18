@@ -1,0 +1,107 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+
+.leftl {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.leftl__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    color: #F57616;
+}
+
+.leftl__photo {
+    width: 676px;
+    height: 411px;
+    border-radius: 16px;
+    padding-bottom: 12px;
+    padding-right: 51.5px;
+    padding-top: 16px;
+}
+
+.leftl__text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    color: #018BAF;
+}
+
+.leftl__span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31px;
+    color: rgba(1, 139, 175, 0.51);
+}
+
+.borderl {
+    display: flex;
+}
+
+.leftl__information {
+    border-left: 7px solid #CBD515;
+    padding-left: 21px;
+}
+
+.leftl__info {
+    padding-top: 10px;
+}
+
+.leftl__tit {
+    margin: 0;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    color: #018BAF;
+}
+
+.leftl__text {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 34px;
+    color: rgba(1, 139, 175, 0.51);
+}
+
+.leftl__link {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 34px;
+    color: rgba(1, 139, 175, 0.51);
+    text-decoration: 0;
+    color: #FE7A15;
+    padding-left: 28px;
+}

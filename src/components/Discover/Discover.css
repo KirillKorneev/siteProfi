@@ -1,0 +1,109 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+.discover {
+    width: 100%;
+    background-color: white;
+    margin-top: 19px;
+    padding-bottom: 61px;
+    border-bottom: 1px solid rgba(10, 68, 103, 0.55);
+}
+
+.descover_none {
+    display: none;
+}
+
+.discover__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 62px;
+    text-align: center;
+    color: #018BAF;
+    margin-bottom: 7px;
+}
+
+.discover__text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #4F5A70;
+    margin-bottom: 22px;
+}
+
+.discover__search {
+
+}
+
+.discover__input {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.57);
+    padding-left: 17px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 784px;
+    background: #E8E4E4;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+}
+
+.discover__button {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background: #35B4C2;
+    border: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    width: 189px;
+    height: 64.5px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 27px;
+}
+
+.discovery__title_yellow {
+    color: #F8D90F;
+}
+
+.discovery__title_grey {
+    color: #4F5A70;
+}

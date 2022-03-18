@@ -1,0 +1,124 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+
+.card {
+    width: 295px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.card_blue {
+    background: transparent;
+}
+
+.card__image {
+    border: 0;
+    width: 100%;
+    border-bottom: 6px solid #EFD00C;
+    box-sizing: border-box;
+    border-radius: 13px 13px 0px 0px;
+}
+
+.card__title {
+    margin: 0;
+    margin-top: 10px;
+    width: calc(295px - 8px - 8px);
+    font-family: 'Montserrat-Bold';
+    font-size: 20px;
+    line-height: 24px;
+    color: #018BAF;
+}
+
+.card__text {
+    margin: 0;
+    width: calc(295px - 8px - 8px);
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #018BAF;
+}
+
+.card__info {
+    display: flex;
+    width: calc(295px - 8px - 8px);
+    margin: 0;
+    margin-top: 49px;
+}
+
+
+.card__price {
+    width: auto;
+    margin: 0;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #018BAF;
+}
+
+.card__nom {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    margin-left: 5px;
+    align-self: center;
+}
+
+.card_whites {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #018BAF;
+    opacity: 68%;
+    margin: 0;
+}
+
+.card__days {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    color: #FB5305;
+    margin-top: 11px;
+    margin-bottom: 39px;
+    width: calc(295px - 8px - 8px);
+}
+
+.blueTheme {
+    color: white;
+}
+
+.blueTheme_wh {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.card__nom_whites {
+    width: 13px;
+    height: 13px;
+    align-self: center;
+}

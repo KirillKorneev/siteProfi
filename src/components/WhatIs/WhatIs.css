@@ -1,0 +1,74 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+.component {
+    background: linear-gradient(180deg, rgba(252, 158, 114, 0.7) -0.26%, rgba(255, 100, 29, 0.7) -0.25%, rgba(233, 190, 38, 0.378) 99.74%);
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 36px;
+    border-top: 1px solid rgba(10, 68, 103, 0.55);
+    border-bottom: 1px solid rgba(10, 68, 103, 0.55);
+}
+
+.component__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1010px;
+    margin: auto;
+    align-items: center;
+}
+
+.component__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-bottom: 86px;
+}
+
+.component__bars {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.component__bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.component__photo {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+.component__text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #018BAF;
+    width: 180px;
+    margin-top: 28px;
+}

@@ -1,0 +1,12 @@
+.container {
+    background-color: white;
+    padding-top: 23px;
+}
+
+.container__content {
+    width: 1272px;
+    margin: auto;
+    border-bottom: 1px solid rgba(10, 68, 103, 0.55);
+    padding-bottom: 17px;
+    display: flex;
+}

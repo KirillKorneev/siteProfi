@@ -1,0 +1,54 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+.news {
+    margin-bottom: 14px;
+}
+
+.news__content{
+    display: flex;
+}
+
+.news__photo {
+    border-radius: 16px;
+    
+}
+
+.news__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.news__title {
+    margin: 0;
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #018BAF;
+    width: 326px;
+}
+
+.news__author {
+    margin: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: rgba(1, 139, 175, 0.51);
+} 

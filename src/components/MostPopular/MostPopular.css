@@ -1,0 +1,45 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+.pop {
+    background: linear-gradient(180deg, #018BAF 0%, #35B4C2 100%);
+}
+
+.popular {
+    max-width: 1277px; 
+    margin: auto;
+    padding-top: 30px; 
+    padding-bottom: 73px; 
+}
+
+.popular__info {
+    display: flex;
+    padding-left: 19px;
+}
+
+.popular__title {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-size: 27px;
+    line-height: 33px;
+    color: #F57616;
+    margin: 0;
+    margin-right: 50px;
+    margin-bottom: 28px;
+}
+
+.popular__text {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-size: 27px;
+    line-height: 33px;
+    color: white;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.popular__cards {
+    align-self: start;
+}

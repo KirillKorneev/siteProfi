@@ -1,0 +1,44 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    src: url('../../fonts//Metrophobic/Metrophobic-Regular.woff') format('woff');
+    font-family: 'Metrophobic';
+}
+
+.nav {
+    width: 100%;
+    border-bottom: 1px solid rgba(10, 68, 103, 0.55);
+    padding-bottom: 5px;
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1305px;
+    margin: auto;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.nav__but {
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: #018BAF;
+}

@@ -1,0 +1,82 @@
+@font-face {
+    src: url('../../fonts/Inder/Inder-Regular.woff') format('woff');
+    font-family: 'Inder';
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgba(10, 68, 103, 0.55);
+    padding-top: 14px;
+}
+
+.header_grey {
+    background-color: #E5E5E5;
+}
+
+.header__content {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 12px;
+}
+
+.header__button {
+    background-image: url('../../images/logobut.svg');
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.header__logo {
+    margin-left: 120px;
+}
+
+.header__input {
+    background: #E8E8E8;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Inder';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    color: #094567;
+    border: 0;
+    outline: none;
+    padding-left: 7px;
+    width: 165px;
+    height: 26px;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__log {
+    font-family: 'Inder';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    color: #094567;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+    margin-left: 22px;
+    text-decoration: none;
+}
