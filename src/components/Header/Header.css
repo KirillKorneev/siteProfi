@@ -3,6 +3,11 @@
     font-family: 'Inder';
 }
 
+@font-face {
+    src: url('../../fonts/NovaSquare.woff') format('woff');
+    font-family: 'NovaSquare';
+}
+
 .header {
     width: 100%;
     background-color: white;
@@ -79,4 +84,94 @@
     background: transparent;
     margin-left: 22px;
     text-decoration: none;
+}
+
+.header__menu{
+    z-index: -10;
+    position: fixed;
+    top: -400px;
+    left: -400px;
+    width: 1000px;
+    height: 1000px;
+    background-color: #EFD00C;
+    border-radius: 500px;
+    transition: 1s;
+    opacity:0;
+}
+
+.header__menu_show{
+    z-index: 100;
+    transition: 1s;
+    opacity: 1;
+}
+
+.header__menuLogo {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 13px;
+    left: 0px;
+    background-image: url('../../images/logobut.svg');
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.ac {
+    position: fixed;
+    top: 92px;
+    left: 76px;
+    font-family: 'NovaSquare';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 84px;
+    color: #4F5A70;
+    text-decoration: none;
+}
+
+.inv {
+    position: fixed;
+    top: 183px;
+    left: 76px;
+    font-family: 'NovaSquare';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+
+    color: #4F5A70;
+    text-decoration: none;
+}
+
+.new {
+    position: fixed;
+    top: 276px;
+    left: 76px;
+    font-family: 'NovaSquare';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    
+    color: #4F5A70;
+    text-decoration: none;    
+}
+
+.cl {
+    position: fixed;
+    top: 365px;
+    left: 76px;
+    font-family: 'NovaSquare';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #4F5A70;
 }

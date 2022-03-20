@@ -1,0 +1,49 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+.little__card {
+    width: 315px;
+    height: 263px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 13px;
+}
+
+.little__image {
+    height: 152px;
+    width: 315px;
+    border-bottom: 6px solid #EFD00C;
+}
+
+.little__title {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #018BAF;
+    margin: 0;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 16px;
+}
+
+.little__text {
+    margin: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #35B4C2;
+    margin-top: 24px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+

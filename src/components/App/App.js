@@ -10,6 +10,7 @@ import {
 import './App.css';
 import articles from '../../data/data.js';
 import news from '../../data/news';
+import acc from '../../data/acc';
 
 import { CurrentUserContext } from '../../context/CurrentUserContext';
 
@@ -25,11 +26,17 @@ import Log from '../Log/Log';
 import CardsList from '../CardsList/CardsList';
 import FeaturedProject from '../FeaturedProject/FeaturedProject';
 import LatestProject from '../LatestProject/LatestProject';
+import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
+import Account from '../Account/Account';
 
 function App() {
 
-  const [isLogged, setIsLogged] = React.useState(false);
-  const [currentUser, setCurrentUser] = React.useState('Artem');
+  const [isLogged, setIsLogged] = React.useState(true);
+  const [currentUser, setCurrentUser] = React.useState({});
+
+  React.useEffect(()=>{
+    setCurrentUser(acc);
+  }, [])
 
   function handleLogin(userDataIn) {
     setCurrentUser(userDataIn);
@@ -48,6 +55,15 @@ function App() {
       <button onClick={switchLog}>"Зайти/выйти" на/с сайт</button>
       <BrowserRouter>
         <Switch>
+
+          <ProtectedRoute
+            path = "/account"
+            isLogged = {isLogged}
+            articles = {articles}
+            component = {Account}
+            isAccount = {true}
+          />
+
           <Route path="/cardlist">
             <Header 
               isGrey = {true}
