@@ -6,5 +6,5 @@ export default {
     surname: "Plenkin",
     balance: "1000,07",
     photo: userPhoto,
-    id: "2"
+    id: "1"
 }

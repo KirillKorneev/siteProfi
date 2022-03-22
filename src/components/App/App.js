@@ -4,11 +4,12 @@ import {
   Switch,
   Route,
   Link,
+  useHistory
 } from 'react-router-dom';
 
 
 import './App.css';
-import articles from '../../data/data.js';
+import articlesData from '../../data/data.js';
 import news from '../../data/news';
 import acc from '../../data/acc';
 
@@ -28,15 +29,36 @@ import FeaturedProject from '../FeaturedProject/FeaturedProject';
 import LatestProject from '../LatestProject/LatestProject';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import Account from '../Account/Account';
+import ProjectReg from '../ProectReg/ProjectReg';
 
 function App() {
 
-  const [isLogged, setIsLogged] = React.useState(true);
+  const [isLogged, setIsLogged] = React.useState(false);
   const [currentUser, setCurrentUser] = React.useState({});
+  const [articles, setArticles] = React.useState([]);
+  const history = useHistory();
 
   React.useEffect(()=>{
     setCurrentUser(acc);
+    setArticles(articlesData);
   }, [])
+
+  function isYours(man) {
+    for (let j = 0; j < articles.length; j++) {
+      if(man.id === articles[j].owner) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function handleLoginFromDiscover(email) {
+    console.log(email);
+    const user = currentUser;
+    user.email = email;
+    setCurrentUser(user);
+    console.log(currentUser);
+  }
 
   function handleLogin(userDataIn) {
     setCurrentUser(userDataIn);
@@ -52,8 +74,12 @@ function App() {
     <CurrentUserContext.Provider value = {
       currentUser
     }>
-      <button onClick={switchLog}>"Зайти/выйти" на/с сайт</button>
       <BrowserRouter>
+
+
+
+        
+
         <Switch>
 
           <ProtectedRoute
@@ -62,18 +88,146 @@ function App() {
             articles = {articles}
             component = {Account}
             isAccount = {true}
+            isSettings = {false}
+            isInvestments = {false}
           />
 
-          <Route path="/cardlist">
+          <ProtectedRoute
+            path = "/investments"
+            isLogged = {isLogged}
+            articles = {articles}
+            component = {Account}
+            isAccount = {false}
+            isSettings = {false}
+            isInvestments = {true}
+          />
+
+          <ProtectedRoute
+            path = "/settings"
+            isLogged = {isLogged}
+            articles = {articles}
+            component = {Account}
+            isAccount = {false}
+            isSettings = {true}
+            isInvestments = {false}
+          />  
+
+          <ProtectedRoute
+            path = "/projectstart"
+            isLogged = {isLogged}
+            articles = {articles}
+            component = {ProjectReg}
+          />      
+
+          <Route path="/games">
             <Header 
-              isGrey = {true}
+              isGrey = {false}
               isLogged = {isLogged}
             />
             <CardsList
               articles = {articles}
+              title = {'Games'}
             />
             <Footer />
           </Route>
+
+          <Route path="/art">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title = {'Art'}
+            />
+            <Footer />
+          </Route>
+
+          <Route path="/tech">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title = {'Technology'}
+            />
+            <Footer />
+          </Route>
+
+          <Route path="/film">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title = {'Film'}
+            />
+            <Footer />
+          </Route>
+
+          <Route path="/music">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+
+            />
+            <CardsList
+              articles = {articles}
+              title = {'Music'}
+            />
+            <Footer />
+          </Route>
+
+          <Route path="/pub">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title={'Publishing'}
+            />
+            <Footer />
+          </Route>
+
+          <Route path="/design">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title = {'Design'}
+            />
+            <Footer />
+          </Route>
+
+          <Route path="/mostpopular">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title = {'Most Popular'}
+            />
+            <Footer />
+          </Route>
+
+          <Route path="/juststarted">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title = {'Just Started'}
+            />
+            <Footer />
+          </Route>
+
 
           <Route path="/login">
             <Header 
@@ -81,7 +235,9 @@ function App() {
               isLogged = {isLogged}
             />
             <Log />
-            <Footer />
+            <Footer
+              isGrey = {true}
+            />
           </Route>
 
           <Route path="/">
@@ -106,12 +262,13 @@ function App() {
             <WhatIs />
             <Discover
               isLogged = {isLogged}
+              handleLoginFromDiscover = {handleLoginFromDiscover}
             />
             <Footer />
           </Route>
         </Switch>
       </BrowserRouter>
-
+      <button onClick={switchLog}>"Зайти/выйти" на/с сайт/а</button>
     </CurrentUserContext.Provider>
   );
 }

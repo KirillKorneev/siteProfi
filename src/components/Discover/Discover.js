@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Discover.css';
 
 function Discover(props) {
@@ -7,7 +8,7 @@ function Discover(props) {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        console.log('tapped');
+        props.handleLoginFromDiscover(text);
     }
 
     function handleChangeInput(e) {
@@ -25,7 +26,11 @@ function Discover(props) {
                 <p className='discover__text'>Sign up to start up</p>
                 <form className="discover__search">
                     <input id="search-input" name="inputSearch" required type="text" minLength="2" maxLength="200" placeholder="Enter email address" className="discover__input" value={text} onChange={handleChangeInput}/>
-                    <button className={`discover__button`} onClick={handleSubmit}>Continue</button>
+                    
+                        <button className={`discover__button`} onClick={handleSubmit}>
+                            <Link className='discover__redirect' to="/login">Continue</Link>
+                        </button>
+                    
                 </form>
             </div>
         </div>

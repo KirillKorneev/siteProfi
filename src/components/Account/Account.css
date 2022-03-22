@@ -157,3 +157,85 @@
     margin: 0;
     margin-top: 20px;
 }
+
+.acc__form {
+    width: 100%;
+}
+
+.settings {
+    margin-bottom: 16px;
+}
+
+.acc__dataName {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    border-top: 1px solid rgba(10, 68, 103, 0.55);
+    border-bottom: 1px solid rgba(10, 68, 103, 0.55);
+}
+
+.acc__nameSet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc__surname {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+}
+
+.acc__email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding-bottom: 38зч;
+}
+
+.acc__imputText {
+    margin: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    color: #F57616;
+}
+
+.acc__input {
+    width: 804px;
+    background: #F2F2F2;
+    box-shadow: inset 3px -2px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    border: 0;  
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    padding-left: 17px;
+    color: #018BAF;
+}
+
+.acc__unploadStyle {
+
+    width: 50px;
+    height: 50px;
+    background-color: green;
+
+}
+
+.acc__uploadButton {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+    background-color: white;
+    text-decoration-line: underline;
+    
+    color: #018BAF; 
+}

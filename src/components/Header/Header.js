@@ -21,17 +21,23 @@ function Header(props) {
 
     return (
         <div className={`header ${props.isGrey ? `header_grey` : ``}`}>
+            <div className={`blur ${isMenu ? `blur_show` : ``}`}></div>
             <div className='header__content'>
                 <div className={`header__menu ${isMenu ? `header__menu_show` : ``}`}>
                     <button className='header__menuLogo' onClick={showMenu}></button>
                     <Link className='ac' to="/account">Account</Link>
                     <Link className='inv' to="/investments">Investments</Link>
-                    <Link className='new' to="/new">New projects</Link>
-                    <Link className='cl' to="cardlist">Popular projects</Link>
+                    <Link className='new' to="/projectstart">New projects</Link>
+                    <Link className='cl' to="/mostpopular">Popular projects</Link>
                 </div>
                 <button className='header__button' onClick={showMenu}></button>
+                {
+                    props.isAccount || props.isSettings ? 
+                    <Link className='header__start' to="/">Start new porject</Link> :
+                    <></>
+                }
                 <Link to="/">
-                    <img src={logo} className='header__logo' alt=''/>
+                    <img src={logo} className={`header__logo ${props.isAccount || props.isSettings ? 'header__logo_center' : ''}`} alt=''/>
                 </Link>
                 <div className='header__info'>
                     <input id="search-header-input" name="inputSearchHeader" required type="text" minLength="2" maxLength="200" placeholder="search" className="header__input" value={text} onChange={handleChangeInput}/>

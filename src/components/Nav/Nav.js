@@ -7,13 +7,13 @@ function Nav() {
     return (
         <div className='nav'>
             <div className='nav__content'>
-                <Link className='nav__but' to='/'>Games</Link>
-                <Link className='nav__but' to='/'>Art</Link>
-                <Link className='nav__but' to='/'>Technology</Link>
-                <Link className='nav__but' to='/'>Film</Link>
-                <Link className='nav__but' to='/'>Music</Link>
-                <Link className='nav__but' to='/'>Publishing</Link>
-                <Link className='nav__but' to='/'>Design</Link>
+                <Link className='nav__but' to='/games'>Games</Link>
+                <Link className='nav__but' to='/art'>Art</Link>
+                <Link className='nav__but' to='/tech'>Technology</Link>
+                <Link className='nav__but' to='/film'>Film</Link>
+                <Link className='nav__but' to='/music'>Music</Link>
+                <Link className='nav__but' to='/pub'>Publishing</Link>
+                <Link className='nav__but' to='/design'>Design</Link>
             </div>
         </div>
     );

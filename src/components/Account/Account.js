@@ -1,3 +1,5 @@
+/* eslint-disable no-empty-pattern */
+/* eslint-disable no-undef */
 import React from 'react';
 import { Route, Redirect, useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
@@ -16,12 +18,31 @@ import { CurrentUserContext } from '../../context/CurrentUserContext';
 
 function Account(props) {
     const currentUser = React.useContext(CurrentUserContext);
+    const [data, setData] = React.useState({
+        nameSet: '',
+        surnameSet: '',
+        emailSet: currentUser.email,
+    });
+
+    function handleChange(e) {
+        const {name, value} = e.target;
+        setData((prevData) => ( {
+            ...prevData,
+            [name]: value
+        }))
+    }
+
+    const { nameSet, surnameSet, emailSet } = data;
+
 
     return (
         <>
             <Header
                 isGrey = {false}
                 isLogged = {props.isLogged}
+                isAccount = {props.isAccount}
+                isSettings = {props.isSettings}
+                isInvestments = {props.isInvestments}
             />
             <div className='acc'>
                 <div className='acc__left'>
@@ -34,9 +55,9 @@ function Account(props) {
                         </div>
                     </div>
                     <div className='acc__nav'>
-                        <Link to='/' className='acc__link'>My Projects</Link>
-                        <Link to='/' className='acc__link acc__link_pad'>My Investments</Link>
-                        <Link to='/' className='acc__link acc__link_pad'>Settings</Link>
+                        <Link to='/account' className='acc__link'>My Projects</Link>
+                        <Link to='/investments' className='acc__link acc__link_pad'>My Investments</Link>
+                        <Link to='/settings' className='acc__link acc__link_pad'>Settings</Link>
                     </div>
                     <div className='acc__exit'>
                         <img src={exit} alt="" className='acc__exitImage' />
@@ -44,12 +65,62 @@ function Account(props) {
                     </div>
                 </div>
                 <div className='acc__right'>
-                    <p className='acc__name'>{`${currentUser.name} ${currentUser.surname}`}</p>
-                    <p className='acc__title'>{props.isAccount ? `Projects` : `Investments`}</p>
-                    <LittleCardsBar
-                        articles = {props.articles}
-                        isLogged = {props.isLogged}
-                    />
+                    {
+                        props.isSettings ? 
+                        <>
+                            <p className='acc__name'>{`${currentUser.name} ${currentUser.surname}`}</p>
+                            <p className='acc__title settings'>Settings</p>
+                            <form className='acc__form'>
+                                <div className='acc__dataName'>
+                                    <div className='acc__nameSet'>
+                                        <p className='acc__imputText'>Name:</p>
+                                        <input 
+                                            className='acc__input' 
+                                            value={nameSet} 
+                                            onChange={handleChange} 
+                                            id="email-input-login"
+                                            type="text" 
+                                            placeholder="Name"
+                                        />
+                                    </div>
+                                    <div className='acc__surname'>
+                                        <p className='acc__imputText'>Surname:</p>
+                                        <input 
+                                            className='acc__input' 
+                                            value={surnameSet} 
+                                            onChange={handleChange} 
+                                            id="email-input-login"
+                                            type="text" 
+                                            placeholder="Surname"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='acc__email'>
+                                    <p className='acc__imputText'>Email:</p>
+                                    <input 
+                                        className='acc__input' 
+                                        value={emailSet} 
+                                        onChange={handleChange} 
+                                        id="email-input-login"
+                                        type="text" 
+                                        placeholder="Email"
+                                    />
+                                </div>
+                                <div className='acc__uploadPhoto'>
+
+                                </div>
+                            </form>
+                        </>
+                        :
+                        <>
+                            <p className='acc__name'>{`${currentUser.name} ${currentUser.surname}`}</p>
+                            <p className='acc__title'>{props.isAccount ? `Projects` : `Investments`}</p>
+                            <LittleCardsBar
+                                articles = {props.articles}
+                                isLogged = {props.isLogged}
+                            />
+                        </>
+                    }
                 </div>
             </div>
             <Footer />

@@ -1,0 +1,89 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+.project {
+    width: 100%;
+}
+
+.project__form {
+    width: 805px;
+    margin: auto;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__title {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    margin: 0;
+    color: #018BAF;   
+    align-self: center;
+    margin-bottom: 17px;
+}
+
+.project__text {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;  
+    color: #F57616;  
+    margin: 0;
+}
+
+.project__input {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    background: #F2F2F2;
+    box-shadow: inset 3px -2px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    width: 805px;
+    height: 46px;
+    color: rgba(99, 99, 99, 0.56);
+    border: 0;
+    padding-left: 17px;
+    margin-top: 5px;
+}
+
+.project__textarea {
+    background: #F2F2F2;
+    box-shadow: inset 3px -2px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    width: 805px;
+    height: 120px;
+    resize: none;
+    font-family: 'Duru Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    padding-left: 17px;
+    padding-top: 12px;
+    
+    color: rgba(99, 99, 99, 0.56);
+    
+}
+
+.project__text_margin {
+    margin-top: 31px;
+}

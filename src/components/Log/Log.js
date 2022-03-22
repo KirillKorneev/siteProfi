@@ -1,15 +1,17 @@
 import React from 'react';
 import './Log.css';
 
+import { CurrentUserContext } from '../../context/CurrentUserContext';
 
 const Log = (props) => {
+    const currentUser = React.useContext(CurrentUserContext);
     const [data, setData] = React.useState({
         email: '',
         password: ''
     });
 
     const [dataConf, setDataConf] = React.useState({
-        confemail: '',
+        confemail: currentUser.email,
         cpassword: '',
         confpass: ''
     })

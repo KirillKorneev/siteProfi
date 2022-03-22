@@ -10,7 +10,7 @@ function JustStarted(props) {
         <div className='started'>
             <div className='started__info'>
                 <p className='started__title'>Just started</p>
-                <Link to='/cardlist'>
+                <Link to='/juststarted'>
                     <p className='started__text'>See them all</p>
                 </Link>
             </div>

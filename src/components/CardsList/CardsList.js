@@ -5,10 +5,10 @@ import Card from '../Card/Card.js';
 const CardsList = (props) => {
 
     return (
-        <div className='list'>
-            <div className='list__content'>
-                <p className='list__title'> Just started </p>
-                <div className='list__cards'>
+        <div className='listt'>
+            <div className='listt__content'>
+                <p className='listt__title'>{props.title}</p>
+                <div className='listt__cards'>
                     {
                         props.articles.map((card) => {
                             return <Card 

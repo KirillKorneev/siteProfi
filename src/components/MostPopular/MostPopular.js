@@ -11,7 +11,7 @@ function MostPopular(props) {
             <div className='popular'>
                 <div className='popular__info'>
                     <p className='popular__title'>Most Popular</p>
-                    <Link to='/cardlist'>
+                    <Link to='/mostpopular'>
                         <p className='popular__text'>See them all</p>
                     </Link>
                 </div>

@@ -100,6 +100,14 @@
     margin-left: 27px;
 }
 
+.discover__redirect {
+    text-decoration: none;
+    color: white;
+    width: 189px;
+    height: 64.5px;
+    background-color: transparent;
+}
+
 .discovery__title_yellow {
     color: #F8D90F;
 }
