@@ -191,7 +191,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 35px;
-    padding-bottom: 38зч;
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgba(10, 68, 103, 0.55);
 }
 
 .acc__imputText {
@@ -239,3 +240,52 @@
     
     color: #018BAF; 
 }
+
+.acc__uploadPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 47px;
+}
+
+.acc__uploadImg {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+}
+
+.acc__upload {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    cursor: pointer; 
+    color: #018BAF;
+    margin-top: 7px;
+}
+
+.acc__imgPreview {
+    margin: 0;
+    height: 265px;
+    width: 216px;
+}
+
+.acc__submitButton {
+    background: #F57616;
+    border-radius: 21px;
+    width: 216px;
+    height: 49px;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 42px;
+    border: 0;
+    color: #FFFFFF;
+    margin-top: 81px;
+}
+

@@ -32,12 +32,12 @@ function Header(props) {
                 </div>
                 <button className='header__button' onClick={showMenu}></button>
                 {
-                    props.isAccount || props.isSettings ? 
-                    <Link className='header__start' to="/">Start new porject</Link> :
+                    props.isAccount || props.isSettings || props.isInvestments ? 
+                    <Link className='header__start' to="/projectstart">Start new porject</Link> :
                     <></>
                 }
                 <Link to="/">
-                    <img src={logo} className={`header__logo ${props.isAccount || props.isSettings ? 'header__logo_center' : ''}`} alt=''/>
+                    <img src={logo} className={`header__logo ${props.isAccount || props.isSettings || props.isInvestments ? 'header__logo_center' : ''}`} alt=''/>
                 </Link>
                 <div className='header__info'>
                     <input id="search-header-input" name="inputSearchHeader" required type="text" minLength="2" maxLength="200" placeholder="search" className="header__input" value={text} onChange={handleChangeInput}/>

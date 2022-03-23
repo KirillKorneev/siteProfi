@@ -13,6 +13,11 @@
     font-family: 'Montserrat';
 }
 
+@font-face {
+    src: url('../../fonts/Metrophobic-Regular.woff') format('woff');
+    font-family: 'Metrophobic';
+}
+
 .project {
     width: 100%;
 }
@@ -86,4 +91,100 @@
 
 .project__text_margin {
     margin-top: 31px;
+}
+
+.project__uploadPhoto {
+    width: 824px;
+    border: 1px dashed rgba(99, 99, 99, 0.94);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__imgPreview {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    width: 792px;
+    height: 397px;
+}
+
+.project__uploadImg {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+}
+
+.project__upload {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    cursor: pointer; 
+    color: #018BAF;
+}
+
+.project__up {
+    margin-top: 35px;
+    margin-bottom: 38px;
+}
+
+.project__prices {
+    display: flex;
+    flex-direction: row;
+}
+
+.myClassName {
+    background: #F2F2F2;
+    border-radius: 7px;
+}
+
+.myControlClassName {
+    margin: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    color: rgba(99, 99, 99, 0.56);
+}
+
+.myControlButton {
+    background-color: transparent;
+    border: 0;
+    background-image: url(../../images/arrow.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    align-self: start;
+}
+
+.myMenuClassName {
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #018BAF;  
+    padding-top: 2px;
+    border-top: 1px solid #777272;
+    padding-left: 12px;
+    padding-bottom: 5px;
+}
+
+
+
+.myArrowClassName {
+    background-image: url(../../images/arrow.png);
+    height: 100px;
+    width: 100px;
 }

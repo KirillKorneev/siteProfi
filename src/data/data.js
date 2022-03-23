@@ -10,6 +10,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "1"
     },
     {
@@ -20,6 +22,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "1"
     },
     {
@@ -30,6 +34,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -40,6 +46,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -50,6 +58,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -60,6 +70,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -70,6 +82,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -80,6 +94,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -90,6 +106,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -100,6 +118,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -110,6 +130,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -120,6 +142,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -130,6 +154,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -140,6 +166,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -150,6 +178,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -160,6 +190,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -170,6 +202,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
     {
@@ -180,6 +214,8 @@ export default [
         price: "32,000002",
         prePrice: "100,00",
         days: "16",
+        category: "games",
+        information: "111111",
         owner: "2"
     },
 ]

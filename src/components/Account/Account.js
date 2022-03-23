@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable no-empty-pattern */
 /* eslint-disable no-undef */
 import React from 'react';
@@ -16,6 +17,8 @@ import LittleCardsBar from '../LittleCardsBar/LittleCardsBar';
 
 import { CurrentUserContext } from '../../context/CurrentUserContext';
 
+import img from '../../images/prew.png';
+
 function Account(props) {
     const currentUser = React.useContext(CurrentUserContext);
     const [data, setData] = React.useState({
@@ -23,6 +26,10 @@ function Account(props) {
         surnameSet: '',
         emailSet: currentUser.email,
     });
+    const [photoData, setPhotoData] = React.useState({
+        file: '',
+        imagePreviewUrl: ''
+    })
 
     function handleChange(e) {
         const {name, value} = e.target;
@@ -34,6 +41,25 @@ function Account(props) {
 
     const { nameSet, surnameSet, emailSet } = data;
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log('handle uploading-', photoData.file);
+    }
+
+    function  _handleImageChange(e) {
+        e.preventDefault();
+    
+        let reader = new FileReader();
+        let file = e.target.files[0];
+    
+        reader.onloadend = () => {
+            setPhotoData({
+                file: file,
+                imagePreviewUrl: reader.result
+            });
+        }
+        reader.readAsDataURL(file)
+    }
 
     return (
         <>
@@ -70,7 +96,7 @@ function Account(props) {
                         <>
                             <p className='acc__name'>{`${currentUser.name} ${currentUser.surname}`}</p>
                             <p className='acc__title settings'>Settings</p>
-                            <form className='acc__form'>
+                            <form className='acc__form' onSubmit={(e)=>handleSubmit(e)}>
                                 <div className='acc__dataName'>
                                     <div className='acc__nameSet'>
                                         <p className='acc__imputText'>Name:</p>
@@ -107,7 +133,26 @@ function Account(props) {
                                     />
                                 </div>
                                 <div className='acc__uploadPhoto'>
-
+                                    {
+                                        photoData.imagePreviewUrl ? <img src={photoData.imagePreviewUrl} className="acc__imgPreview"/> : <img src={img} className="acc__imgPreview" />
+                                    }
+                                    <div>
+                                        <input 
+                                            id="file-input" 
+                                            type="file" name="file" 
+                                            onChange={(e)=>_handleImageChange(e)} 
+                                            className = 'acc__uploadImg'
+                                        />
+                                        <label htmlFor="file-input" className='acc__upload'>+Add photo</label>
+                                    </div>
+                            
+                                    <button 
+                                        className="acc__submitButton" 
+                                        type="submit" 
+                                        onClick={(e)=>handleSubmit(e)}
+                                    >
+                                        Save changes
+                                    </button>
                                 </div>
                             </form>
                         </>

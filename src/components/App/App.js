@@ -33,7 +33,7 @@ import ProjectReg from '../ProectReg/ProjectReg';
 
 function App() {
 
-  const [isLogged, setIsLogged] = React.useState(false);
+  const [isLogged, setIsLogged] = React.useState(true);
   const [currentUser, setCurrentUser] = React.useState({});
   const [articles, setArticles] = React.useState([]);
   const history = useHistory();
@@ -75,10 +75,6 @@ function App() {
       currentUser
     }>
       <BrowserRouter>
-
-
-
-        
 
         <Switch>
 
