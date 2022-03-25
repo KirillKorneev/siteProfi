@@ -114,6 +114,8 @@
     background: #018BAF;
     margin-top: 27px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .from__button_red {
@@ -124,4 +126,8 @@
     text-decoration: none;
     width: 367px;
     color: #FFFFFF;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
 }

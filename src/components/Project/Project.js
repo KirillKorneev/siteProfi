@@ -23,6 +23,8 @@ function Project(props) {
         props.updateCard(props.card);
     }
 
+
+
     return (
         <div className='project__content'>
             <div className='project__top'>
@@ -30,7 +32,11 @@ function Project(props) {
                 <div className='project__info'>
                     <div className='project__height'>
                         <p className='project__title'>{props.card.title}</p>
-                        <Link className='project__updateBut' onClick={updateCard} to="/projectstart"></Link>
+                        {
+                            props.card.owner === currentUser.id ?
+                            <Link className='project__updateBut' onClick={updateCard} to="/projectupdate"></Link> :
+                            ''
+                        }
                     </div>
                     <p className='project__desc'>{props.card.desc}</p>
                     <div className='project__name'>

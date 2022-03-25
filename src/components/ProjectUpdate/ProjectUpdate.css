@@ -1,0 +1,218 @@
+@font-face {
+    src: url('../../fonts/Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat-Bold';
+}
+
+@font-face {
+    src: url('../../fonts/Monda/Monda-Regular.woff') format('woff');
+    font-family: 'Monda';
+}
+
+@font-face {
+    src: url('../../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    src: url('../../fonts/Metrophobic-Regular.woff') format('woff');
+    font-family: 'Metrophobic';
+}
+
+.projectReg {
+    width: 100%;
+}
+
+.projectReg__form {
+    width: 805px;
+    margin: auto;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectReg__title {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    margin: 0;
+    color: #018BAF;   
+    align-self: center;
+    margin-bottom: 17px;
+}
+
+.projectReg__text {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;  
+    color: #F57616;  
+    margin: 0;
+}
+
+.projectReg__input {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    background: #F2F2F2;
+    box-shadow: inset 3px -2px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    width: calc(805px - 17px);
+    height: 46px;
+    color: rgba(99, 99, 99, 0.56);
+    border: 0;
+    padding-left: 17px;
+    margin-top: 5px;
+}
+
+.projectReg__textarea {
+    background: #F2F2F2;
+    box-shadow: inset 3px -2px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    width: calc(805px - 17px);
+    height: 120px;
+    resize: none;
+    font-family: 'Duru Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    padding-left: 17px;
+    padding-top: 12px;
+    border: 0;
+    color: rgba(99, 99, 99, 0.56);
+    
+}
+
+.projectReg__text_margin {
+    margin-top: 31px;
+    margin-bottom: 13px;
+}
+
+.projectReg__uploadPhoto {
+    width: calc(805px);
+    border: 1px dashed rgba(99, 99, 99, 0.94);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectReg__imgPreview {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    width: 772px;
+    height: 397px;
+}
+
+.projectReg__uploadImg {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+}
+
+.projectReg__upload {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    cursor: pointer; 
+    color: #018BAF;
+}
+
+.projectReg__up {
+    margin-top: 35px;
+    margin-bottom: 38px;
+}
+
+.projectReg__prices {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.projectReg__pricesL {
+
+}
+
+.projectReg__pricesR {
+    margin-left: 246px;
+}
+
+.projectReg__input_price {
+    width: 136px;
+}
+
+.projectReg__w {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectReg__wallet {
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
+}
+
+.projectReg__days {
+    margin: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    color: #094567;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
+}
+
+.myClassName {
+    background: #F2F2F2;
+    border-radius: 7px;
+    border: 0;
+    margin: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    width: calc(810px);
+    color: rgba(99, 99, 99, 0.56);
+    appearance: none; 
+    overflow: hidden;
+    background: url(../../images/arrow.png) no-repeat right;
+    background-position: 770px; 
+    background-color: #F2F2F2;; 
+}
+
+
+.myMenuClassName {
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #018BAF;  
+    padding-top: 2px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    border-top: 1px solid rgba(119, 114, 114, 0.51);
+}
+
+.projectReg__textarea_big {
+    height: 213px;
+}

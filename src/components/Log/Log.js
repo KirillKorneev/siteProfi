@@ -38,11 +38,25 @@ const Log = (props) => {
 
     function handleLogIn(e) {
         e.preventDefault();
-        props.handleLogIn(data);
+        console.log(data);
+        if (data.email !== '' && cpassword.password !== ''  && confpass.password !== '') {
+            if (cpassword.password === confpass.password ) {
+                props.handleLogIn(data);
+            } else {
+                console.log('passwords are not the same');
+            }
+        } else {
+            console.log('enter data');
+        }
     }
 
     function handleSignUp(e) {
-        console.log('s');
+        console.log(data);
+        if (confemail.email !== '' && data.password !== '') {
+            props.handleLogIn(data);
+        } else {
+            console.log('enter data');
+        }
         e.preventDefault();
         props.handleSignUp(dataConf);
     }
@@ -70,10 +84,9 @@ const Log = (props) => {
                         type="password" 
                         placeholder="Password"
                     />
-                    
-                    <button type='submit' className='form__button'>
-                        <Link className='form__redirect' to="/">Log in</Link>
-                    </button>
+                        <button type='submit' className='form__button'>
+                            Log In
+                        </button>
                     
                 </form>
                 <p className='log__question'>
@@ -109,7 +122,7 @@ const Log = (props) => {
                         placeholder="Confirm password"
                     />
                     <button type='submit' className='form__button from__button_red'>
-                        <Link className='form__redirect' to="/">Sign up</Link>
+                        Sign up
                     </button>
                 </form>
             </div>

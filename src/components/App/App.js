@@ -30,8 +30,9 @@ import FeaturedProject from '../FeaturedProject/FeaturedProject';
 import LatestProject from '../LatestProject/LatestProject';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import Account from '../Account/Account';
-import ProjectReg from '../ProectReg/ProjectReg';
+import ProjectReg from '../ProjectReg/ProjectReg';
 import Project from '../Project/Project';
+import ProjectUpdate from '../ProjectUpdate/ProjectUpdate';
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
   function handleLogin(userDataIn) {
     setCurrentUser(userDataIn);
     setIsLogged(true);
+    history.push('/');
     console.log('You entered the site!');
   }
 
@@ -94,6 +96,11 @@ function App() {
     setUpCard(data);
   }
 
+  function handleUpdateCard(data) {
+    console.log('updating card... new data:');
+    console.log(data);
+  }
+
   function handleClick(data) {
     setCardId(data);
   }
@@ -109,7 +116,7 @@ function App() {
       <BrowserRouter>
 
         <Switch>
-
+        
           <ProtectedRoute
             path = "/account"
             isLogged = {isLogged}
@@ -149,9 +156,16 @@ function App() {
             articles = {articles}
             component = {ProjectReg}
             newCard = {newCard}
+          />
+          <ProtectedRoute
+            path = "/projectupdate"
+            isLogged = {isLogged}
+            articles = {articles}
+            component = {ProjectUpdate}
+            updateCard = {handleUpdateCard}
             update={updateBool}
             upData = {upCard}
-          />      
+          />        
 
           <Route path="/games">
             <Header 
@@ -161,6 +175,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Games'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -173,6 +188,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Art'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -185,6 +201,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Technology'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -197,6 +214,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Film'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -210,6 +228,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Music'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -222,6 +241,7 @@ function App() {
             <CardsList
               articles = {articles}
               title={'Publishing'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -234,6 +254,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Design'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -246,6 +267,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Most Popular'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
@@ -258,6 +280,7 @@ function App() {
             <CardsList
               articles = {articles}
               title = {'Just Started'}
+              handleClick = {handleClick}
             />
             <Footer />
           </Route>
