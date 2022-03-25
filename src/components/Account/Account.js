@@ -44,6 +44,9 @@ function Account(props) {
     function handleSubmit(e) {
         e.preventDefault();
         console.log('handle uploading-', photoData.file);
+        console.log(photoData);
+        console.log(data);
+        props.handleChangeAccount(photoData, data);
     }
 
     function  _handleImageChange(e) {
@@ -104,7 +107,7 @@ function Account(props) {
                                             className='acc__input' 
                                             value={nameSet} 
                                             onChange={handleChange} 
-                                            id="email-input-login"
+                                            name="nameSet"
                                             type="text" 
                                             placeholder="Name"
                                         />
@@ -115,7 +118,7 @@ function Account(props) {
                                             className='acc__input' 
                                             value={surnameSet} 
                                             onChange={handleChange} 
-                                            id="email-input-login"
+                                            name="surnameSet"
                                             type="text" 
                                             placeholder="Surname"
                                         />
@@ -127,7 +130,7 @@ function Account(props) {
                                         className='acc__input' 
                                         value={emailSet} 
                                         onChange={handleChange} 
-                                        id="email-input-login"
+                                        name="emailSet"
                                         type="text" 
                                         placeholder="Email"
                                     />

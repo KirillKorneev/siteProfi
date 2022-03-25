@@ -14,13 +14,19 @@ const CardsBar = (props) => {
                     props.articles.map((card) => 
                         <Carousel.Item>
                             <Card 
+                                id = {card.id}
                                 photo_link = {card.photo_link}
                                 title = {card.title}
                                 text = {card.text}
+                                desc = {card.desc}
                                 price = {card.price}
                                 prePrice = {card.prePrice}
                                 days = {card.days}
+                                category = {card.category}
+                                information = {card.information}
                                 isBlue = {props.isBlue}
+                                handleClick = {props.handleClick}
+                                owner = {card.owner}
                             />
                         </Carousel.Item>
                     )

@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 
 import { CurrentUserContext } from '../../context/CurrentUserContext';
 import img from '../../images/coverDefault.png';
+import wallet from '../../images/pricee.svg';
 
 function ProjectReg(props) {
     const currentUser = React.useContext(CurrentUserContext);
@@ -15,7 +16,8 @@ function ProjectReg(props) {
         photo_link: '',
         title: '',
         text: '',
-        price: '',
+        desc: '',
+        category: '',
         prePrice: '',
         days: '',
         owner: currentUser.id
@@ -24,12 +26,6 @@ function ProjectReg(props) {
         file: '',
         imagePreviewUrl: ''
     })
-
-    const options = [
-        'Games', 'Art', 'Technology', 'Film', 'Music', 'Publishing', 'Design'
-    ];
-
-    const { photo_link, title, text, desc, price, prePrice, days} = data;
 
     function handleChange(e) {
         const {name, value} = e.target;
@@ -41,7 +37,17 @@ function ProjectReg(props) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log('handle uploading-', photoData.file);
+        const newData = {
+            photo_link: photoData.imagePreviewUrl,
+            title: data.title,
+            text: data.text,
+            desc: data.desc,
+            category: data.category,
+            prePrice: data.prePrice,
+            days: data.days,
+            owner: currentUser.id
+        }
+        props.newCard(newData);
     }
 
     function  _handleImageChange(e) {
@@ -62,57 +68,100 @@ function ProjectReg(props) {
     return (
         <>
             <Header isLogged = {props.isLogged} />
-            <div className='project'>
-                <form className='project__form'>
-                    <p className='project__title'>Congratulations! You’ve just started a new project</p>
-                    <p className='project__text'>Project name</p>
+            <div className='projectReg'>
+                <form className='projectReg__form'>
+                    <p className='projectReg__title'>Congratulations! You’ve just started a new project</p>
+                    <p className='projectReg__text'>Project name</p>
                     <input 
-                        className='project__input' 
-                        value={title} 
+                        className='projectReg__input' 
                         onChange={handleChange} 
                         type="text" 
                         placeholder="Project"
+                        name="title"
                     />
-                    <p className='project__text project__text_margin'>Team name</p>
+                    <p className='projectReg__text projectReg__text_margin'>Team name</p>
                     <input 
-                        className='project__input' 
-                        value={text} 
+                        className='projectReg__input'  
                         onChange={handleChange} 
                         type="text" 
                         placeholder="Team"
+                        name="text"
                     />
 
-                    <p className='project__text project__text_margin'>Cover</p>
-                    <div className='project__uploadPhoto'>
+                    <p className='projectReg__text projectReg__text_margin'>Cover</p>
+                    <div className='projectReg__uploadPhoto'>
                         {
-                            photoData.imagePreviewUrl ? <img src={photoData.imagePreviewUrl} className="project__imgPreview"/> : <img src={img} className="project__imgPreview" />
+                            photoData.imagePreviewUrl ? <img src={photoData.imagePreviewUrl} className="projectReg__imgPreview"/> : <img src={img} className="projectReg__imgPreview" />
                         }
-                        <div className='project__up'>
+                        <div className='projectReg__up'>
                             <input 
                                 id="file-input" 
-                                type="file" name="file" 
+                                type="file" 
+                                name="photo_link" 
                                 onChange={(e)=>_handleImageChange(e)} 
-                                className = 'project__uploadImg'
+                                className = 'projectReg__uploadImg'
                             />
-                            <label htmlFor="file-input" className='project__upload'>Download the cover</label>
+                            <label htmlFor="file-input" className='projectReg__upload'>Download the cover</label>
                         </div>
                     </div>
 
-                    <Dropdown 
-                        className='myClassName'
-                        controlClassName='myControlClassName' 
-                        options={options}  
-                        placeholder="Choose the category" 
-                        menuClassName='myMenuClassName'
-                        arrowClassName='myArrowClassName'
-                    />
-                    
-                    <div className='project__prices'>
+                    <p className='projectReg__text projectReg__text_margin'>Short description</p>
+                    <textarea 
+                        className='projectReg__textarea' 
+                        name="desc"
+                        onChange={handleChange} 
+                        placeholder="will display on the project card">
+                    </textarea>
 
+                    <p className='projectReg__text projectReg__text_margin'>Category</p>
+                    <select onChange={handleChange} name="category" className='myClassName'>
+                        <option className='myMenuClassName'>Choose the category</option>
+                        <option className='myMenuClassName' value="Games">Games</option>
+                        <option className='myMenuClassName' value="Art">Art</option>
+                        <option className='myMenuClassName' value="Technology">Technology</option>
+                        <option className='myMenuClassName' value="Film">Film</option>
+                        <option className='myMenuClassName' value="Music">Music</option>
+                        <option className='myMenuClassName' value="Publishing">Publishing</option>
+                        <option className='myMenuClassName' value="Design">Design</option>
+                    </select>
+
+                    <div className='projectReg__prices'>
+                        <div className='projectReg__pricesL'>
+                            <p className='projectReg__text'>Necessary contribute</p>
+                            <div className='projectReg__w'>
+                                <input 
+                                    className='projectReg__input projectReg__input_price'  
+                                    onChange={handleChange} 
+                                    type="text" 
+                                    placeholder="0"
+                                    name="prePrice"
+                                />
+                                <img className='projectReg__wallet' src={wallet} alt="" />
+                            </div>
+                        </div>
+                        <div className='projectReg__pricesR'>
+                            <p className='projectReg__text'>Project duration</p>
+                            <div className='projectReg__w'>
+                                <input 
+                                    className='projectReg__input projectReg__input_price' 
+                                    onChange={handleChange} 
+                                    type="text" 
+                                    placeholder="0"
+                                    name="days"
+                                />
+                                <p className='projectReg__days'>days</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <p className='project__text project__text_margin'>Short description</p>
-                    <textarea className='project__textarea' value={desc} onChange={handleChange} placeholder="will display on the project card"></textarea>
+                    <p className='projectReg__text projectReg__text_margin'>Project information</p>
+                    <textarea 
+                        className='projectReg__textarea projectReg__textarea_big' 
+                        name="information"
+                        onChange={handleChange} 
+                        placeholder="">
+                    </textarea>
+
                     <button 
                         className="acc__submitButton" 
                         type="submit" 

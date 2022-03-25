@@ -6,7 +6,11 @@ import rock2 from '../../images/PreBiggestRock.png';
 import rock3 from '../../images/MiddleRock.png';
 import rock4 from '../../images/SmallestRock.png';
 
-function Become() {
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { propTypes } from 'react-grid-carousel';
+
+function Become(props) {
 
     return (
         <div class="bec">
@@ -24,9 +28,15 @@ function Become() {
                     <p className='become__text'>
                         secure transactions, minimal risks of investments <span className='become__text_dark'>based on cryptocurrency</span>
                     </p>
-                    <button className='become__button'>
-                        Become an investor
-                    </button>
+                    {
+                        !props.isLogged ?
+                        <Link className='become__button' smooth={true} to="anchor">
+                            Become an investor
+                        </Link> :
+                        <Link className='become__button' smooth={true}>
+                            Become an investor
+                        </Link>
+                    }
                 </div>
             </div>
             <div className='become__right'>

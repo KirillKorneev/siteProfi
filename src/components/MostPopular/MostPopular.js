@@ -19,6 +19,7 @@ function MostPopular(props) {
                     <CardsBar 
                         articles = {props.articles}
                         isBlue = {true}
+                        handleClick = {props.handleClick}
                     />
                 </div>
             </div>

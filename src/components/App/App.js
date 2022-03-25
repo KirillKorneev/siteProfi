@@ -6,7 +6,8 @@ import {
   Link,
   useHistory
 } from 'react-router-dom';
-
+import * as Scroll from 'react-scroll';
+import { Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 import './App.css';
 import articlesData from '../../data/data.js';
@@ -30,12 +31,16 @@ import LatestProject from '../LatestProject/LatestProject';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import Account from '../Account/Account';
 import ProjectReg from '../ProectReg/ProjectReg';
+import Project from '../Project/Project';
 
 function App() {
 
   const [isLogged, setIsLogged] = React.useState(true);
   const [currentUser, setCurrentUser] = React.useState({});
   const [articles, setArticles] = React.useState([]);
+  const [cardId, setCardId] = React.useState({});
+  const [upCard, setUpCard] = React.useState({});
+  const [updateBool, setUpdateBool] = React.useState(false);
   const history = useHistory();
 
   React.useEffect(()=>{
@@ -62,8 +67,35 @@ function App() {
 
   function handleLogin(userDataIn) {
     setCurrentUser(userDataIn);
-
     setIsLogged(true);
+    console.log('You entered the site!');
+  }
+
+  function handleSignup(userDataIn) {
+    setCurrentUser(userDataIn);
+    setIsLogged(true);
+    console.log('You reged and entered the site!');
+  }
+
+  function handleChangeAccount(dataPhoto, data) {
+    currentUser.name = data.nameSet;
+    currentUser.surname = data.surnameSet;
+    currentUser.photo = dataPhoto.imagePreviewUrl;
+    console.log(currentUser)
+  }
+
+  function newCard(data) {
+    console.log('You huploaded a new card:');
+    console.log(data);
+  }
+
+  function updateCard(data) {
+    console.log(data);
+    setUpCard(data);
+  }
+
+  function handleClick(data) {
+    setCardId(data);
   }
 
   function switchLog() {
@@ -86,6 +118,7 @@ function App() {
             isAccount = {true}
             isSettings = {false}
             isInvestments = {false}
+            handleChangeAccount = {handleChangeAccount}
           />
 
           <ProtectedRoute
@@ -96,6 +129,7 @@ function App() {
             isAccount = {false}
             isSettings = {false}
             isInvestments = {true}
+            handleChangeAccount = {handleChangeAccount}
           />
 
           <ProtectedRoute
@@ -106,6 +140,7 @@ function App() {
             isAccount = {false}
             isSettings = {true}
             isInvestments = {false}
+            handleChangeAccount = {handleChangeAccount}
           />  
 
           <ProtectedRoute
@@ -113,6 +148,9 @@ function App() {
             isLogged = {isLogged}
             articles = {articles}
             component = {ProjectReg}
+            newCard = {newCard}
+            update={updateBool}
+            upData = {upCard}
           />      
 
           <Route path="/games">
@@ -230,10 +268,25 @@ function App() {
               isGrey = {true}
               isLogged = {isLogged}
             />
-            <Log />
+            <Log 
+              handleLogIn = {handleLogin}
+              handleSignUp = {handleSignup}
+            />
             <Footer
               isGrey = {true}
             />
+          </Route>
+
+          <Route path="/project/:id">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <Project 
+              card = {cardId}
+              updateCard = {updateCard}
+            />
+            <Footer />
           </Route>
 
           <Route path="/">
@@ -242,7 +295,10 @@ function App() {
               isLogged = {isLogged}
             />
             <Nav />
-            <Become />
+            <Become 
+              isLogged = {isLogged}
+              
+            />
             <FeaturedProject 
               news = {news}
             />
@@ -251,17 +307,22 @@ function App() {
             />
             <MostPopular 
               articles = {articles}
+              handleClick = {handleClick}
             />
             <JustStarted
               articles = {articles}
+              handleClick = {handleClick}
             />
             <WhatIs />
-            <Discover
-              isLogged = {isLogged}
-              handleLoginFromDiscover = {handleLoginFromDiscover}
-            />
+            <Element name="anchor"> 
+              <Discover
+                isLogged = {isLogged}
+                handleLoginFromDiscover = {handleLoginFromDiscover}
+              />
+            </Element>
             <Footer />
           </Route>
+
         </Switch>
       </BrowserRouter>
       <button onClick={switchLog}>"Зайти/выйти" на/с сайт/а</button>

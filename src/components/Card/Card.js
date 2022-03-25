@@ -2,11 +2,36 @@ import React from 'react';
 import './Card.css';
 import card_nom from '../../images/nom.svg';
 
+import { Link } from 'react-router-dom';
+
 function Card(props) {
+
+  const data = {
+    id: props.id,
+    photo_link: props.photo_link,
+    title: props.title,
+    text: props.text,
+    desc: props.desc,
+    price: props.price,
+    prePrice: props.prePrice,
+    days: props.days,
+    category: props.category,
+    information: props.information,
+    owner: props.owner
+  }
+
+  function handleClick() {
+    props.handleClick(data);
+  }
+
   return (
     <div className={`card ${props.isBlue ? `card_blue` : ``}`}>
+      <Link to={`/project/${props.id}`} onClick={handleClick}>
         <img className='card__image' alt="" src={props.photo_link} />
-        <p className={`card__title ${props.isBlue ? `blueTheme` : ``}`}>{props.title}</p>
+      </Link>
+        <Link className='title' to="#" onClick={handleClick}>
+          <p className={`card__title ${props.isBlue ? `blueTheme` : ``}`}>{props.title}</p>
+        </Link>
         <p className={`card__text ${props.isBlue ? `blueTheme` : ``}`}>{props.text}</p>
         <div className='card__info'>
             <p className={`card__price ${props.isBlue ? `blueTheme` : ``}`}>{props.price}</p>

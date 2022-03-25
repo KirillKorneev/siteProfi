@@ -31,7 +31,8 @@
 
 .card__image {
     border: 0;
-    width: 100%;
+    width: 295px;
+    height: 200px;
     border-bottom: 6px solid #EFD00C;
     box-sizing: border-box;
     border-radius: 13px 13px 0px 0px;
@@ -45,6 +46,11 @@
     font-size: 20px;
     line-height: 24px;
     color: #018BAF;
+    text-decoration: none;
+}
+
+.title {
+    text-decoration: none;
 }
 
 .card__text {

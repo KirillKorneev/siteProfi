@@ -18,6 +18,7 @@ function JustStarted(props) {
                 <CardsBar 
                     articles = {props.articles}
                     isBlue = {false}
+                    handleClick = {props.handleClick}
                 />
             </div>
         </div>

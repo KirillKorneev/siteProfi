@@ -113,8 +113,15 @@
     color: #FFFFFF;  
     background: #018BAF;
     margin-top: 27px;
+    display: flex;
 }
 
 .from__button_red {
     background-color: #F57616;
+}
+
+.form__redirect {
+    text-decoration: none;
+    width: 367px;
+    color: #FFFFFF;  
 }

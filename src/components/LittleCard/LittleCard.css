@@ -20,6 +20,7 @@
     height: 152px;
     width: 315px;
     border-bottom: 6px solid #EFD00C;
+    border-radius: 13px 13px 0px 0px;
 }
 
 .little__title {

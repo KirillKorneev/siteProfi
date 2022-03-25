@@ -1,8 +1,23 @@
 /* eslint-disable import/no-anonymous-default-export */
 import card_img from './card_im.png';
+import card_img1 from '../images/photoMain.png'
 
 export default [
     {
+        id: 1,
+        photo_link: card_img1,
+        title: "CoDeal - super task-tracker",
+        text: "Powerful Developers",
+        desc: "Task-tracker based on Kanban methodology for small development teams",
+        price: "23,00000",
+        prePrice: "100,00000",
+        days: "16",
+        category: "games",
+        information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus in hac habitasse platea. Faucibus interdum posuere lorem ipsum. Massa ultricies mi quis hendrerit dolor magna eget. Eu mi bibendum neque egestas. Egestas erat imperdiet sed euismod nisi porta lorem mollis. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Sapien pellentesque habitant morbi tristique senectus et netus et. Tellus elementum sagittis vitae et leo duis ut diam. Volutpat consequat mauris nunc congue nisi vitae. Quis auctor elit sed vulputate. Tortor at risus viverra adipiscing at in tellus integer feugiat. Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. At lectus urna duis convallis convallis tellus id interdum. Morbi non arcu risus quis varius quam. Senectus et netus et malesuada fames ac turpis. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Cum sociis natoque penatibus et magnis dis parturient. Turpis tincidunt id aliquet risus. Arcu ac tortor dignissim convallis aenean et tortor at risus. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Sit amet purus gravida quis blandit turpis cursus in hac. Tortor id aliquet lectus proin nibh nisl. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Massa enim nec dui nunc mattis enim ut. Arcu non sodales neque sodales ut etiam sit. Magna eget est lorem ipsum dolor sit amet consectetur. Feugiat pretium nibh ipsum consequat nisl vel pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus in hac habitasse platea. Faucibus interdum posuere lorem ipsum. Massa ultricies mi quis hendrerit dolor magna eget. Eu mi bibendum neque egestas. Egestas erat imperdiet sed euismod nisi porta lorem mollis. ",
+        owner: "1"
+    },
+    {
+        id: 2,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -15,18 +30,7 @@ export default [
         owner: "1"
     },
     {
-        photo_link: card_img,
-        title: "Codeal - super task-tracker",
-        text: "Powerful Developers",
-        desc: "Short Description",
-        price: "32,000002",
-        prePrice: "100,00",
-        days: "16",
-        category: "games",
-        information: "111111",
-        owner: "1"
-    },
-    {
+        id: 3,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -39,6 +43,7 @@ export default [
         owner: "2"
     },
     {
+        id: 4,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -51,6 +56,7 @@ export default [
         owner: "2"
     },
     {
+        id: 5,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -63,6 +69,7 @@ export default [
         owner: "2"
     },
     {
+        id: 6,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -75,6 +82,7 @@ export default [
         owner: "2"
     },
     {
+        id: 7,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -87,6 +95,7 @@ export default [
         owner: "2"
     },
     {
+        id: 8,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -99,6 +108,7 @@ export default [
         owner: "2"
     },
     {
+        id: 9,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -111,6 +121,7 @@ export default [
         owner: "2"
     },
     {
+        id: 10,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -123,6 +134,7 @@ export default [
         owner: "2"
     },
     {
+        id: 11,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -135,6 +147,7 @@ export default [
         owner: "2"
     },
     {
+        id: 12,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -147,6 +160,7 @@ export default [
         owner: "2"
     },
     {
+        id: 13,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -159,6 +173,7 @@ export default [
         owner: "2"
     },
     {
+        id: 14,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -171,6 +186,7 @@ export default [
         owner: "2"
     },
     {
+        id: 15,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -183,6 +199,7 @@ export default [
         owner: "2"
     },
     {
+        id: 16,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -195,6 +212,7 @@ export default [
         owner: "2"
     },
     {
+        id: 17,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
@@ -207,6 +225,7 @@ export default [
         owner: "2"
     },
     {
+        id: 18,
         photo_link: card_img,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",

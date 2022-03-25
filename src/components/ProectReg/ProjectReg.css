@@ -18,11 +18,11 @@
     font-family: 'Metrophobic';
 }
 
-.project {
+.projectReg {
     width: 100%;
 }
 
-.project__form {
+.projectReg__form {
     width: 805px;
     margin: auto;
     margin-top: 17px;
@@ -30,7 +30,7 @@
     flex-direction: column;
 }
 
-.project__title {
+.projectReg__title {
     font-family: 'Montserrat-Bold';
     font-style: normal;
     font-weight: 700;
@@ -42,7 +42,7 @@
     margin-bottom: 17px;
 }
 
-.project__text {
+.projectReg__text {
     font-family: 'Monda';
     font-style: normal;
     font-weight: 400;
@@ -52,7 +52,7 @@
     margin: 0;
 }
 
-.project__input {
+.projectReg__input {
     font-family: 'Monda';
     font-style: normal;
     font-weight: 400;
@@ -61,7 +61,7 @@
     background: #F2F2F2;
     box-shadow: inset 3px -2px 7px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    width: 805px;
+    width: calc(805px - 17px);
     height: 46px;
     color: rgba(99, 99, 99, 0.56);
     border: 0;
@@ -69,11 +69,11 @@
     margin-top: 5px;
 }
 
-.project__textarea {
+.projectReg__textarea {
     background: #F2F2F2;
     box-shadow: inset 3px -2px 7px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    width: 805px;
+    width: calc(805px - 17px);
     height: 120px;
     resize: none;
     font-family: 'Duru Sans';
@@ -84,17 +84,18 @@
     /* identical to box height */
     padding-left: 17px;
     padding-top: 12px;
-    
+    border: 0;
     color: rgba(99, 99, 99, 0.56);
     
 }
 
-.project__text_margin {
+.projectReg__text_margin {
     margin-top: 31px;
+    margin-bottom: 13px;
 }
 
-.project__uploadPhoto {
-    width: 824px;
+.projectReg__uploadPhoto {
+    width: calc(805px);
     border: 1px dashed rgba(99, 99, 99, 0.94);
     box-sizing: border-box;
     display: flex;
@@ -103,15 +104,15 @@
     align-items: center;
 }
 
-.project__imgPreview {
+.projectReg__imgPreview {
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 16px;
-    width: 792px;
+    width: 772px;
     height: 397px;
 }
 
-.project__uploadImg {
+.projectReg__uploadImg {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -119,7 +120,7 @@
     z-index: -10;
 }
 
-.project__upload {
+.projectReg__upload {
     font-family: 'Monda';
     font-style: normal;
     font-weight: 400;
@@ -129,22 +130,57 @@
     color: #018BAF;
 }
 
-.project__up {
+.projectReg__up {
     margin-top: 35px;
     margin-bottom: 38px;
 }
 
-.project__prices {
+.projectReg__prices {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
+}
+
+.projectReg__pricesL {
+
+}
+
+.projectReg__pricesR {
+    margin-left: 246px;
+}
+
+.projectReg__input_price {
+    width: 136px;
+}
+
+.projectReg__w {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectReg__wallet {
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
+}
+
+.projectReg__days {
+    margin: 0;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    color: #094567;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
 }
 
 .myClassName {
     background: #F2F2F2;
     border-radius: 7px;
-}
-
-.myControlClassName {
+    border: 0;
     margin: 0;
     font-family: 'Monda';
     font-style: normal;
@@ -154,19 +190,15 @@
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 12px;
+    width: calc(810px);
     color: rgba(99, 99, 99, 0.56);
+    appearance: none; 
+    overflow: hidden;
+    background: url(../../images/arrow.png) no-repeat right;
+    background-position: 770px; 
+    background-color: #F2F2F2;; 
 }
 
-.myControlButton {
-    background-color: transparent;
-    border: 0;
-    background-image: url(../../images/arrow.png);
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    align-self: start;
-}
 
 .myMenuClassName {
     font-family: 'Metrophobic';
@@ -176,15 +208,11 @@
     line-height: 27px;
     color: #018BAF;  
     padding-top: 2px;
-    border-top: 1px solid #777272;
     padding-left: 12px;
     padding-bottom: 5px;
+    border-top: 1px solid rgba(119, 114, 114, 0.51);
 }
 
-
-
-.myArrowClassName {
-    background-image: url(../../images/arrow.png);
-    height: 100px;
-    width: 100px;
+.projectReg__textarea_big {
+    height: 213px;
 }
