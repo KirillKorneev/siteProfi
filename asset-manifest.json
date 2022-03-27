@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/siteProfi/static/css/main.d832c1f7.css",
-    "main.js": "/siteProfi/static/js/main.13841e3b.js",
+    "main.css": "/siteProfi/static/css/main.b70b806f.css",
+    "main.js": "/siteProfi/static/js/main.9109057a.js",
     "static/js/787.dd4029b4.chunk.js": "/siteProfi/static/js/787.dd4029b4.chunk.js",
     "static/media/photoMain.png": "/siteProfi/static/media/photoMain.15348f767512897815be.png",
     "static/media/latest.png": "/siteProfi/static/media/latest.cdac03f7c154cbadb92d.png",
@@ -36,13 +36,14 @@
     "static/media/pricee.svg": "/siteProfi/static/media/pricee.bc17e7950ff8f0760913a616e972eb48.svg",
     "static/media/priceBlack.svg": "/siteProfi/static/media/priceBlack.bd6a6cdda023f53a1ac56cea945da308.svg",
     "static/media/blueWallet.svg": "/siteProfi/static/media/blueWallet.9720f9c82d416c2b527afe987d200410.svg",
+    "static/media/walletBlue.svg": "/siteProfi/static/media/walletBlue.9720f9c82d416c2b527afe987d200410.svg",
     "static/media/nom.svg": "/siteProfi/static/media/nom.c7d0ebd85bfd5cf3071eeccdb41b02eb.svg",
-    "main.d832c1f7.css.map": "/siteProfi/static/css/main.d832c1f7.css.map",
-    "main.13841e3b.js.map": "/siteProfi/static/js/main.13841e3b.js.map",
+    "main.b70b806f.css.map": "/siteProfi/static/css/main.b70b806f.css.map",
+    "main.9109057a.js.map": "/siteProfi/static/js/main.9109057a.js.map",
     "787.dd4029b4.chunk.js.map": "/siteProfi/static/js/787.dd4029b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d832c1f7.css",
-    "static/js/main.13841e3b.js"
+    "static/css/main.b70b806f.css",
+    "static/js/main.9109057a.js"
   ]
 }
