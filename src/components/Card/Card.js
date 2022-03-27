@@ -30,7 +30,7 @@ function Card(props) {
       <Link to={`/project/${props.id}`} onClick={handleClick}>
         <img className='card__image' alt="" src={props.photo_link} />
       </Link>
-        <Link className='title' to="#" onClick={handleClick}>
+        <Link className='title' to={`/project/${props.id}`} onClick={handleClick}>
           <p className={`card__title ${props.isBlue ? `blueTheme` : ``}`}>{props.title}</p>
         </Link>
         <p className={`card__text ${props.isBlue ? `blueTheme` : ``}`}>{props.text}</p>
