@@ -161,14 +161,19 @@ function ProjectReg(props) {
                         onChange={handleChange} 
                         placeholder="">
                     </textarea>
+                    
 
+                    
                     <button 
                         className="projectReg__submitButton" 
                         type="submit" 
                         onClick={(e)=>handleSubmit(e)}
                     >
+                        <Link className='projectReg__linkBut' to="/account">
                         Save changes
+                        </Link>
                     </button>
+                    
                 </form>
             </div>
             <Footer />

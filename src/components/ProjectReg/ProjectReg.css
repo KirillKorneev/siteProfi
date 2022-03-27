@@ -233,3 +233,9 @@
     margin-bottom: 45px;
     cursor: pointer;
 }
+
+.projectReg__linkBut {
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}

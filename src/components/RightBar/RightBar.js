@@ -54,11 +54,11 @@ function RightBar(props) {
                         <>
                             {list.map((item) => {
                                 return (
-                                    <Link to={`/project/${item.id}`}>
+                                    
                                         <NewsCard
                                             card = {item}
                                         />
-                                    </Link>
+                                    
                                 );
                             })}
                         </>

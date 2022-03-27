@@ -9,7 +9,9 @@ function LatestProject(props) {
     return (
         <div className='containerL'>
             <div className='containerL__content'>
-                <LeftBarL />
+                <LeftBarL 
+                    latestProject = {props.latestProject}
+                />
             </div>
         </div>
     );

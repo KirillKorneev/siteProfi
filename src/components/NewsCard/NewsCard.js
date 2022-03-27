@@ -9,9 +9,13 @@ function NewsCard(props) {
     return (
         <div className='news'>
             <div className='news__content'>
-                <img src={im} alt="" className='news__photo' />
+                <Link className='news__photo' to={`/project/${props.card.id}`}>
+                    <img src={im} alt="" className='news__photo' />
+                </Link>
                 <div className='news__info'>
-                    <p className='news__title'>{props.card.title}</p>
+                    <Link className='news__title' to={`/project/${props.card.id}`}>
+                        <p className='news__title'>{props.card.title}</p>
+                    </Link>
                     <p className='news__author'>{props.card.text}</p>
                 </div>
             </div>

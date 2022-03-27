@@ -9,10 +9,14 @@ function LeftBar(props) {
         <div className='left'>
             <p className='left__title'>Featured project</p>
             <div className='border'>
-                <img src={im1} alt="" className='left__photo' />
+                <Link to={`/project/${props.featuredCard.id}`}>
+                    <img src={props.featuredCard.photo_link} alt="" className='left__photo' />
+                </Link>
             </div>
-            <p className='left__text'>Codeal - super task-tracker</p>
-            <p className='left__span'>Powerful developers</p>
+            <Link className='left__text' to={`/project/${props.featuredCard.id}`}>
+                <p className='left__text'>{props.featuredCard.title}</p>
+            </Link>
+            <p className='left__span'>{props.featuredCard.text}</p>
         </div>
     );
 }

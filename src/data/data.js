@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import card_img from './card_im.png';
 import card_img1 from '../images/photoMain.png'
+import im1 from '../images/title_im.png';
 
 export default [
     {
@@ -18,7 +19,7 @@ export default [
     },
     {
         id: 2,
-        photo_link: card_img,
+        photo_link: im1,
         title: "Codeal - super task-tracker",
         text: "Powerful Developers",
         desc: "Short Description",

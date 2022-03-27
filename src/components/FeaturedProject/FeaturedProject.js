@@ -9,7 +9,10 @@ function FeaturedProject(props) {
     return (
         <div className='container'>
             <div className='container__content'>
-                <LeftBar />
+                <LeftBar 
+                    featuredCard = {props.featuredCard}
+                    handleClick = {props.handleClick}
+                />
                 <RightBar 
                     news = {props.news}
                 />

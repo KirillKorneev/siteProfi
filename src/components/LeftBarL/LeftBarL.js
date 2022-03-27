@@ -9,7 +9,9 @@ function LeftBarL(props) {
         <div className='leftl'>
             <p className='leftl__title'>Latest project</p>
             <div className='borderl'>
-                <img src={im1} alt="" className='leftl__photo' />
+                <Link className='left1__link' to={`/project/${props.latestProject.id}`}>
+                    <img src={props.latestProject.photo_link} alt="" className='leftl__photo' />
+                </Link>
                 <div className='leftl__info'>
                     <div className='leftl__information'>
                         <p className='leftl__tit'>FundFlow by AMAI team</p>

@@ -42,6 +42,8 @@ function App() {
   const [cardId, setCardId] = React.useState({});
   const [upCard, setUpCard] = React.useState({});
   const [updateBool, setUpdateBool] = React.useState(false);
+  const [featuredCard, setFeaturedCard] = React.useState(articlesData[1]);
+  const [latestProject, setLatestProject] = React.useState(articlesData[0]);
   const history = useHistory();
 
   React.useEffect(()=>{
@@ -324,9 +326,11 @@ function App() {
             />
             <FeaturedProject 
               news = {news}
+              featuredCard = {featuredCard}
+              handleClick = {handleClick}
             />
             <LatestProject
-
+              latestProject = {latestProject}
             />
             <MostPopular 
               articles = {articles}
