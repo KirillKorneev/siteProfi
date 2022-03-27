@@ -41,6 +41,7 @@
     line-height: 23px;
     color: #018BAF;
     width: 326px;
+    text-decoration: none;
 }
 
 .news__author {
@@ -51,4 +52,5 @@
     font-size: 17px;
     line-height: 28px;
     color: rgba(1, 139, 175, 0.51);
+    text-decoration: none;
 } 

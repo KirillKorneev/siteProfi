@@ -19,9 +19,10 @@ function Header(props) {
         setIsMenu(!isMenu);
     }
 
+
     return (
         <div className={`header ${props.isGrey ? `header_grey` : ``}`}>
-            <div className={`blur ${isMenu ? `blur_show` : ``}`}></div>
+            <div onClick={showMenu} className={`blur ${isMenu ? `blur_show` : ``}`}></div>
             <div className='header__content'>
                 <div className={`header__menu ${isMenu ? `header__menu_show` : ``}`}>
                     <button className='header__menuLogo' onClick={showMenu}></button>
@@ -32,12 +33,12 @@ function Header(props) {
                 </div>
                 <button className='header__button' onClick={showMenu}></button>
                 {
-                    props.isAccount || props.isSettings || props.isInvestments ? 
+                    props.isLogged ? 
                     <Link className='header__start' to="/projectstart">Start new porject</Link> :
                     <></>
                 }
                 <Link to="/">
-                    <img src={logo} className={`header__logo ${props.isAccount || props.isSettings || props.isInvestments ? 'header__logo_center' : ''}`} alt=''/>
+                    <img src={logo} className={`header__logo ${props.isLogged ? 'header__logo_center' : ''}`} alt=''/>
                 </Link>
                 <div className='header__info'>
                     <input id="search-header-input" name="inputSearchHeader" required type="text" minLength="2" maxLength="200" placeholder="search" className="header__input" value={text} onChange={handleChangeInput}/>

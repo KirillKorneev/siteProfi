@@ -1,6 +1,7 @@
 import React from 'react';
 import './Card.css';
 import card_nom from '../../images/nom.svg';
+import wallet_blue from '../../images/walletBlue.svg';
 
 import { Link } from 'react-router-dom';
 
@@ -35,11 +36,11 @@ function Card(props) {
         <p className={`card__text ${props.isBlue ? `blueTheme` : ``}`}>{props.text}</p>
         <div className='card__info'>
             <p className={`card__price ${props.isBlue ? `blueTheme` : ``}`}>{props.price}</p>
-            <img className='card__nom' alt="" src={card_nom} />
+            <img className='card__nom' alt="" src={props.isBlue ? card_nom : wallet_blue} />
         </div>
         <div className='card__info card_whites'>
             <p className={`card__price card_whites ${props.isBlue ? `blueTheme blueTheme_wh` : ``}`}>{`from ${props.prePrice}`}</p>
-            <img className='card__nom card__nom_whites' alt="" src={card_nom} />
+            <img className='card__nom card__nom_whites' alt="" src={props.isBlue ? card_nom : wallet_blue} />
         </div>
         <p className='card__days'>{`${props.days} days rest`}</p>
     </div>

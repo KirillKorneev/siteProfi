@@ -63,7 +63,7 @@
     border-radius: 7px;
     width: calc(805px - 17px);
     height: 46px;
-    color: rgba(99, 99, 99, 0.56);
+    color: black;
     border: 0;
     padding-left: 17px;
     margin-top: 5px;
@@ -85,7 +85,7 @@
     padding-left: 17px;
     padding-top: 12px;
     border: 0;
-    color: rgba(99, 99, 99, 0.56);
+    color: black;
     
 }
 
@@ -215,4 +215,21 @@
 
 .projectReg__textarea_big {
     height: 213px;
+}
+
+.projectReg__submitButton {
+    background: #F57616;
+    border-radius: 21px;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 42px;
+    width: 257px;
+    color: #FFFFFF;
+    border: 0;
+    align-self: center;
+    margin-top: 84px;
+    margin-bottom: 45px;
+    cursor: pointer;
 }

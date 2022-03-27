@@ -6,7 +6,7 @@
 .listt {
     width: 100%;
     padding-top: 26px;
-    min-height: calc(100vh - 61px - 50px - 50px - 7px);
+    min-height: calc(100vh - 80px - 62px - 26px);
 }
 
 .listt__content {

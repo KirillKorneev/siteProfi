@@ -78,18 +78,16 @@ function ProjectUpdate(props) {
                         className='projectReg__input' 
                         onChange={e => handleChange(e)} 
                         type="text" 
-                        placeholder="Project"
                         name="title"
-                        value={data.title}
+                        placeholder={data.title}
                     />
                     <p className='projectReg__text projectReg__text_margin'>Team name</p>
                     <input 
                         className='projectReg__input'  
                         onChange={handleChange} 
                         type="text" 
-                        placeholder="Team"
                         name="text"
-                        value={data.text}
+                        placeholder={data.text}
                     />
 
                     <p className='projectReg__text projectReg__text_margin'>Cover</p>
@@ -114,8 +112,7 @@ function ProjectUpdate(props) {
                         className='projectReg__textarea' 
                         name="desc"
                         onChange={handleChange} 
-                        placeholder="will display on the project card"
-                        value={data.desc}    
+                        placeholder={data.desc}    
                     >
                     </textarea>
 
@@ -166,9 +163,8 @@ function ProjectUpdate(props) {
                                     className='projectReg__input projectReg__input_price'  
                                     onChange={handleChange} 
                                     type="text" 
-                                    placeholder="0"
                                     name="prePrice"
-                                    value={data.prePrice}
+                                    placeholder={data.prePrice}
                                 />
                                 <img className='projectReg__wallet' src={wallet} alt="" />
                             </div>
@@ -180,9 +176,8 @@ function ProjectUpdate(props) {
                                     className='projectReg__input projectReg__input_price' 
                                     onChange={handleChange} 
                                     type="text" 
-                                    placeholder="0"
                                     name="days"
-                                    value={data.days}
+                                    placeholder={data.days}
                                 />
                                 <p className='projectReg__days'>days</p>
                             </div>
@@ -194,13 +189,12 @@ function ProjectUpdate(props) {
                         className='projectReg__textarea projectReg__textarea_big' 
                         name="information"
                         onChange={handleChange} 
-                        placeholder=""
-                        value={data.information}
+                        placeholder={data.information}
                     >
                     </textarea>
 
                     <button 
-                        className="acc__submitButton" 
+                        className="projectReg__submitButton" 
                         type="submit" 
                         onClick={(e)=>handleSubmit(e)}
                     >

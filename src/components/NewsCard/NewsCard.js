@@ -12,7 +12,7 @@ function NewsCard(props) {
                 <img src={im} alt="" className='news__photo' />
                 <div className='news__info'>
                     <p className='news__title'>{props.card.title}</p>
-                    <p className='news__author'>{props.card.author}</p>
+                    <p className='news__author'>{props.card.text}</p>
                 </div>
             </div>
         </div>

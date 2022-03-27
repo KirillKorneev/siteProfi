@@ -163,7 +163,7 @@ function ProjectReg(props) {
                     </textarea>
 
                     <button 
-                        className="acc__submitButton" 
+                        className="projectReg__submitButton" 
                         type="submit" 
                         onClick={(e)=>handleSubmit(e)}
                     >

@@ -84,10 +84,14 @@ const Log = (props) => {
                         type="password" 
                         placeholder="Password"
                     />
-                        <button type='submit' className='form__button'>
-                            Log In
-                        </button>
-                    
+                    <button type='submit' className='form__button'>
+                        Log In
+                    </button>
+                    <Link to="#" className='form__forgot'>
+                        forgot your password?
+                    </Link>
+
+
                 </form>
                 <p className='log__question'>
                     New to <span className='log__question_yellow'>Fund</span><span className='log__question_grey'>Flow</span>?

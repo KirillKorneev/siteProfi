@@ -17,6 +17,7 @@
 .footer {
     width: 100%;
     background-color: white;
+    border-top: 1px solid rgba(10, 68, 103, 0.55);
 }
 
 .footer_grey {
