@@ -170,7 +170,7 @@ function ProjectReg(props) {
                         onClick={(e)=>handleSubmit(e)}
                     >
                         <Link className='projectReg__linkBut' to="/account">
-                        Save changes
+                        Save new project
                         </Link>
                     </button>
                     
