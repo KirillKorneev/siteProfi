@@ -90,7 +90,7 @@ function Account(props) {
                     </div>
                     <div className='acc__exit'>
                         <img src={exit} alt="" className='acc__exitImage' />
-                        <button className='acc__exitButton'>Exit</button>
+                        <button onClick={props.switchLog} className='acc__exitButton'>Exit</button>
                     </div>
                 </div>
                 <div className='acc__right'>

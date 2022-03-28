@@ -132,6 +132,7 @@
     background-color: transparent;
     border: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 .acc__name {

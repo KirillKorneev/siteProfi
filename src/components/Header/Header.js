@@ -26,10 +26,10 @@ function Header(props) {
             <div className='header__content'>
                 <div className={`header__menu ${isMenu ? `header__menu_show` : ``}`}>
                     <button className='header__menuLogo' onClick={showMenu}></button>
-                    <Link className='ac' to="/account">Account</Link>
-                    <Link className='inv' to="/investments">Investments</Link>
-                    <Link className='new' to="/projectstart">New projects</Link>
-                    <Link className='cl' to="/mostpopular">Popular projects</Link>
+                    <Link onClick={showMenu} className='ac' to="/account">Account</Link>
+                    <Link onClick={showMenu} className='inv' to="/investments">Investments</Link>
+                    <Link onClick={showMenu} className='new' to="/newprojects">New projects</Link>
+                    <Link onClick={showMenu} className='cl' to="/mostpopular">Popular projects</Link>
                 </div>
                 <button className='header__button' onClick={showMenu}></button>
                 {

@@ -128,6 +128,7 @@ function App() {
             isSettings = {false}
             isInvestments = {false}
             handleChangeAccount = {handleChangeAccount}
+            switchLog = {switchLog}
           />
 
           <ProtectedRoute
@@ -139,6 +140,7 @@ function App() {
             isSettings = {false}
             isInvestments = {true}
             handleChangeAccount = {handleChangeAccount}
+            switchLog = {switchLog}
           />
 
           <ProtectedRoute
@@ -150,6 +152,7 @@ function App() {
             isSettings = {true}
             isInvestments = {false}
             handleChangeAccount = {handleChangeAccount}
+            switchLog = {switchLog}
           />  
 
           <ProtectedRoute
@@ -287,6 +290,18 @@ function App() {
             <Footer />
           </Route>
 
+          <Route path="/newprojects">
+            <Header 
+              isGrey = {false}
+              isLogged = {isLogged}
+            />
+            <CardsList
+              articles = {articles}
+              title = {'New Projects'}
+              handleClick = {handleClick}
+            />
+            <Footer />
+          </Route>
 
           <Route path="/login">
             <Header 
